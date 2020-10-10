@@ -37,7 +37,7 @@ export default function StockItem({item}) {
                     <View>
                         <Text style={styles.stockPrice}>$ {last}</Text>
                         <Text style={{...styles.stockPercent, color: fixed_percent > 0 ? 'rgba(0,185,7,1)': 'rgba(232,11,11,1)'}}>{fixed_percent > 0 && '+'}{fixed_percent}%</Text>
-                        <Text style={{...styles.stockPrice, color: '#F5F5F5', fontSize: 13, paddingTop: 3}}>{Texts.max_bid} : {highestBid}</Text>
+                        <Text style={{...styles.stockPrice, color: '#F5F5F5', fontSize: 13, paddingTop: 3}}>{Texts.max_bid} : $ {highestBid}</Text>
                     </View>
                 </View>
         </Animated.View>
